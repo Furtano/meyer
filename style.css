@@ -10,6 +10,13 @@ Text Domain: meyer
 */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,700italic,400,400italic);
+@media (max-width: 767px) {
+
+	    #logologo img {
+				display: block;
+				margin: auto;
+	    }
+}
 
 h2 a {
 	color: #a1c317;
@@ -30,34 +37,36 @@ body {
 	background-size: 15%;
 }
 .navbar-default  {
-	background-color: #f1f1f1;
+	background: -moz-linear-gradient(top, rgba(241,241,241,0) 0%, rgba(219,219,219,0.65) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(241,241,241,0) 0%,rgba(219,219,219,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(241,241,241,0) 0%,rgba(219,219,219,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f1f1f1', endColorstr='#a6dbdbdb',GradientType=0 ); /* IE6-9 */
+
 	border-color: white;
 }
 nav li {
-	display: inline;
-	list-style-type: none;
-	padding-right: 25px;
+	text-align: center !important;
 }
-nav ul {
-	float: left;
-	list-style: none;
-	padding: 0px;
-	margin: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+.navbar-wrapper, .navbar, .navbar-inner, .container, #main-navbar-collapse{
+  margin-left:0;
+  margin-right:0;
+  padding-left:0;
+  padding-right:0;
+}
+
+.navbar-nav li a {
+	font-size: 23px;
+	color: #575757 !important;
+}
+.navbar-nav li a:hover {
+	color: black !important;
 }
 
 
-nav ul a {
-	color: black;
-	text-decoration: none;
-	font-size: 25px;
-}
 
-nav ul a:hover {
-	background-color: #a1c317;
-	color: black;
-}
+
+
+
 #bgheader {
 	background-image: url("header3.jpg");
 	background-repeat: repeat-x;

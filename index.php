@@ -28,8 +28,8 @@
       <div class="wpcntent col-xs-10 col-lg-8">
 
         <div class="col-xs-12" style="padding-left:0px; padding-right:18px;padding-top:40px;">
-          <div class="col-xs-2">
-            <a href="http://meyer.webfuchs-entwicklung.de/"><img src="<?php echo get_template_directory_uri(); ?>/fitdurchessen.png" style="height: 17vh;"></a>
+          <div id="logologo" class="col-xs-12 col-md-2 col-lg-2">
+            <a href="http://meyer.webfuchs-entwicklung.de/"><img  src="<?php echo get_template_directory_uri(); ?>/fitdurchessen.png" style="height: 17vh;"/></a>
           </div>
           <div class="col-xs-10 hidden-xs hidden-sm " id="bgheader">
           </div>
@@ -46,7 +46,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"></a>
             </div>
             <?php wp_nav_menu( array(
               'theme_location' 	  => 'primary',
