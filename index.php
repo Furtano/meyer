@@ -2,8 +2,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>
-  /style.css">
+
   <!-- Latest compiled and minified JavaScript -->
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width">
@@ -14,6 +13,12 @@
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <?php wp_head(); ?>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>
+  /style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>
+  /wp_generated_classes.css">
+
+
 </head>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
