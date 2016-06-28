@@ -1,13 +1,6 @@
 <?php
-add_theme_support( 'menus' ); 
-add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
-function special_nav_class ($classes, $item) {
-    if (in_array('current-menu-item', $classes) ){
-        $classes[] = 'active ';
-    }
-    return $classes;
-}
+
 
 function addHomeMenuLink($menuItems, $args)
 {
@@ -16,7 +9,7 @@ function addHomeMenuLink($menuItems, $args)
                 if ( is_front_page() )
                         $class = 'class="current-menu-item"';
                 else
-                        $class = '';    
+                        $class = '';
                 $homeMenuItem = '<li ' . $class . '>' .
                                                 $args->before .
                                                 '<a href="' . home_url( '/' ) . '" title="Home">' .
