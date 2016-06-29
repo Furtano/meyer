@@ -1,96 +1,112 @@
-<?php
-/**
- * The template for displaying the header
- *
- * Displays all of the head element and everything up until the "site-content" div.
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
-?><!DOCTYPE html>
+<?php  ?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		<?php wp_head(); ?>
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>
-/style.css">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta name="viewport" content="width=device-width">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <?php wp_head(); ?>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>
+  /style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>
+  /wp_generated_classes.css">
+
+
 </head>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site container-fluid">
+  <div id="page" class="hfeed site container-fluid">
 
-	<div class="col-xs-12" style="padding-left:0px; padding-right:0px;padding-top: 85px;">
-		<div class="col-xs-1 col-lg-2">
-		</div>
+    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;padding-top: 35px;">
+      <div class="col-xs-1 col-lg-2">
+      </div>
 
-		<div class="wpcntent col-xs-10 col-lg-8">
+      <div class="wpcntent col-xs-10 col-lg-8">
 
-			<div class="col-xs-12" style="padding-left:0px; padding-right:0px;padding-top:40px;">
-				<div class="col-xs-2">
-					<a href="http://meyer.webfuchs-entwicklung.de/"><img src="<?php echo get_template_directory_uri(); ?>/fitdurchessen.png" style="height: 20vh;"></a>
-				</div>
-				<div class="col-xs-10 hidden-xs hidden-sm " id="bgheader">
-				</div>
-			</div>
-
-      <!-- Header -->
-			<div class="col-xs-12" >
-				<nav role="navigation" class="navbar navbar-default">
-        <!-- Brand and toggle get grouped for better mobile display -->
-
-        <!-- Collection of nav links and other content for toggling -->
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-								<?php
-
-									$defaults = array(
-										'theme_location'  => '',
-										'menu'            => '',
-										'container'       => 'null',
-										'container_class' => 'null',
-										'container_id'    => 'null',
-										'menu_class'      => 'null',
-										'menu_id'         => 'null',
-										'echo'            => true,
-										'fallback_cb'     => 'wp_page_menu',
-										'before'          => '',
-										'after'           => '',
-										'link_before'     => '',
-										'link_after'      => '',
-										'items_wrap'      => '',
-										'depth'           => 0,
-										'walker'          => ''
-									);
-
-									wp_nav_menu( $defaults );
-								?>
-
-            </ul>
+        <div class="col-xs-12" style="padding-left:0px; padding-right:18px;padding-top:0px;">
+          <div id="logologo" class="col-xs-12 col-md-2 col-lg-2">
+            <a href="http://meyer.webfuchs-entwicklung.de/"><img  src="<?php echo get_template_directory_uri(); ?>/fitdurchessen.png" style="height: 17vh;"/></a>
+          </div>
+          <div class="col-xs-10 hidden-xs hidden-sm " id="bgheader">
+          </div>
         </div>
-    </nav>
-			</div>
 
-					<div class="col-xs-12" >
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <!-- navbar -->
+        <div class="col-xs-12" >
+        <nav id="site-navigation" class="navbar navbar-default" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <?php wp_nav_menu( array(
+              'theme_location' 	  => 'primary',
+              'container' 		    => 'div',
+              'container_class' 	=> 'collapse navbar-collapse',
+              'container_id'    	=> 'main-navbar-collapse',
+              'menu_class'      	=> 'nav navbar-nav',
+              'menu_id'         	=> '',
+              'echo'            	=> true,
+              'fallback_cb'     	=> 'wp_page_menu',
+              'before'          	=> '',
+              'after'           	=> '',
+              'link_before'     	=> '',
+              'link_after'      	=> '',
+              'items_wrap'      	=> '<ul id="%1$s" class="%2$s">%3$s</ul>',
+              'depth'           	=> 0,
+              'walker'          	=> ''
+            )); ?>
 
-				            <?php the_content(); ?>
-				      <?php endwhile; endif; ?>
-					</div>
+          </div>
+        </nav>
+
+
+      </div>
+
+      <div class="col-xs-12" >
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+          <?php the_content(); ?>
+        <?php endwhile; endif; ?>
+      </div>
 
 
 
-		</div>
+    </div>
 
-		<div class="col-xs-1 col-lg-2">
-		</div>
+    <div class="col-xs-1 col-lg-2">
+    </div>
 
-	</div>
+  </div>
 
 
 
-	</div>
+</div>
+
+
+</div><!-- .site-content -->
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    Alle Rechte für <?php echo date('Y') ?> hat Sabine Meyer
+  </div><!-- .site-info -->
+</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+
+</body>
+</html>
