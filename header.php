@@ -1,5 +1,5 @@
-<?php  ?>
 <!DOCTYPE html>
+
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 
@@ -12,15 +12,23 @@
 
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <?php wp_head(); ?>
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>
-  /style.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>
-  /wp_generated_classes.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bootstrap.min.css" >
 
+
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>
+    /style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>
+    /wp_generated_classes.css">
+    <script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/jquery-2.1.4.min.js"></script>
+    <script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/bootstrap.js"></script>
+
+  <?php wp_head(); ?>
 
 </head>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+  <!-- Latest compiled and minified JavaScript -->
 
 
 <body <?php body_class(); ?>>
@@ -53,7 +61,7 @@
               </button>
             </div>
             <?php wp_nav_menu( array(
-              'theme_location' 	  => 'primary',
+              'theme_location' 	  => 'header-menu',
               'container' 		    => 'div',
               'container_class' 	=> 'collapse navbar-collapse',
               'container_id'    	=> 'main-navbar-collapse',
@@ -77,6 +85,7 @@
       </div>
 
       <div class="col-xs-12" >
+
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
           <?php the_content(); ?>
