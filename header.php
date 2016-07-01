@@ -11,7 +11,7 @@
 
 
 
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='<?php echo get_template_directory_uri(); ?>/opensans.css' rel='stylesheet' type='text/css'>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bootstrap.min.css" >
 
@@ -60,23 +60,17 @@
                 <span class="icon-bar"></span>
               </button>
             </div>
-            <?php wp_nav_menu( array(
-              'theme_location' 	  => 'header-menu',
-              'container' 		    => 'div',
-              'container_class' 	=> 'collapse navbar-collapse',
-              'container_id'    	=> 'main-navbar-collapse',
-              'menu_class'      	=> 'nav navbar-nav',
-              'menu_id'         	=> '',
-              'echo'            	=> true,
-              'fallback_cb'     	=> 'wp_page_menu',
-              'before'          	=> '',
-              'after'           	=> '',
-              'link_before'     	=> '',
-              'link_after'      	=> '',
-              'items_wrap'      	=> '<ul id="%1$s" class="%2$s">%3$s</ul>',
-              'depth'           	=> 0,
-              'walker'          	=> ''
-            )); ?>
+            <?php   wp_nav_menu( array(
+                'menu'              => 'primary',
+                'theme_location'    => 'primary',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+        'container_id'      => 'bs-example-navbar-collapse-1',
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+            );?>
 
           </div>
         </nav>
