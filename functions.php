@@ -1,6 +1,6 @@
 <?php
 
-require_once('wp_bootstrap_navwalker.php');
+
 
 function addHomeMenuLink($menuItems, $args)
 {
@@ -26,9 +26,12 @@ function addHomeMenuLink($menuItems, $args)
 add_filter( 'wp_nav_menu_items', 'addHomeMenuLink', 10, 2 );
 function register_my_menus() {
 
-  register_nav_menus( array(
-      'primary' => __( 'Primary Menu', 'header-menu' ),
-  ) );
+  register_nav_menus(
+
+    array('header-menu' => __( 'Header Menu' ) )
+
+  );
+
 }
  add_action ('init', 'register_my_menus');
 ?>
