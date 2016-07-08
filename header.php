@@ -32,7 +32,7 @@
 <body <?php body_class(); ?>>
   <div id="page" class="hfeed site container-fluid">
 
-    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;padding-top: 35px;">
+    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;padding-top: 0px;">
       <div class="col-xs-1 col-lg-1">
       </div>
 
