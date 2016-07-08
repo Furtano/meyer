@@ -27,6 +27,17 @@ h2 a:hover{
 	color: black;
 }
 
+h1 {
+	font-size: 30px;
+	margin-top: 0px;
+}
+h2 {
+	font-size: 27px;
+}
+
+h3 {
+	font-size: 22px;
+}
 
 body {
 	color: black;
