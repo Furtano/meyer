@@ -16,10 +16,8 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bootstrap.min.css" >
 
 
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>
-    /style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>
-    /wp_generated_classes.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/wp_generated_classes.css">
     <script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/jquery-2.1.4.min.js"></script>
     <script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/bootstrap.js"></script>
 
