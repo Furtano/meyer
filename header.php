@@ -108,7 +108,7 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
   <div class="site-info">
-    Alle Rechte für <?php echo date('Y') ?> hat Sabine Meyer
+    <a href="impressum" style="color: white">Impressum</a> | © <?php echo date('Y') ?> Sabine Meyer (außer Fotos)
   </div><!-- .site-info -->
 </footer><!-- .site-footer -->
 
