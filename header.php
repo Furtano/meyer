@@ -35,23 +35,23 @@
   <div id="page" class="hfeed site container-fluid">
 
     <div class="col-xs-12" style="padding-left:0px; padding-right:0px;padding-top: 35px;">
-      <div class="col-xs-1 col-lg-2">
+      <div class="col-xs-1 col-lg-1">
       </div>
 
-      <div class="wpcntent col-xs-10 col-lg-8">
+      <div class="wpcntent col-xs-10 col-lg-10">
 
         <div class="col-xs-12" style="padding-left:0px; padding-right:18px;padding-top:0px;">
           <div id="logologo" class="col-xs-12 col-md-2 col-lg-2">
-            <a href="http://meyer.webfuchs-entwicklung.de/"><img  src="<?php echo get_template_directory_uri(); ?>/fitdurchessen.png" style="height: 17vh;"/></a>
+            <a href="http://meyer.webfuchs-entwicklung.de/"><img  src="<?php echo get_template_directory_uri(); ?>/fitdurchessen2.png" style="height: 17vh;"/></a>
           </div>
           <div class="col-xs-10 hidden-xs hidden-sm " id="bgheader">
           </div>
         </div>
 
         <!-- navbar -->
-        <div class="col-xs-12" >
+        <div class="col-xs-12 col-lg-12" >
         <nav id="site-navigation" class="navbar navbar-default" role="navigation">
-          <div class="container">
+          <div class="container-fullwidth">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -90,7 +90,7 @@
 
     </div>
 
-    <div class="col-xs-1 col-lg-2">
+    <div class="col-xs-1 col-lg-1">
     </div>
 
   </div>
