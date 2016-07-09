@@ -22,6 +22,7 @@
     <script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/bootstrap.js"></script>
 
   <?php wp_head(); ?>
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
 </head>
 
@@ -85,7 +86,7 @@
       <div class="col-xs-12" >
         <?php if(is_home())
         {
-          query_posts( 'cat=-3' );
+          query_posts( 'cat=-' .  get_option('ernaehrungsnews_kategorieId')  );
         };
         ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
