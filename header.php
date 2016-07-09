@@ -85,8 +85,7 @@
       <div class="col-xs-12" >
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-          <?php the_content(); ?>
+          <?php if(!in_category(3)) {the_content();} ?>
         <?php endwhile; endif; ?>
       </div>
 
@@ -107,6 +106,7 @@
 </div><!-- .site-content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
+   <?php wp_footer(); ?>
   <div class="site-info">
     <a href="impressum" style="color: white">Impressum</a> | © <?php echo date('Y') ?> Sabine Meyer (außer Fotos)
   </div><!-- .site-info -->

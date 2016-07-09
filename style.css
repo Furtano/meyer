@@ -27,15 +27,22 @@ h2 a:hover{
 	color: black;
 }
 
+.orangi {
+	color: #ff7200 !important;
+	font-size: 21px;
+}
 h1 {
+	color: #ff7200;
 	font-size: 30px;
 	margin-top: 0px;
 }
 h2 {
+	color: #ff7200;
 	font-size: 27px;
 }
 
 h3 {
+	color: #ff7200;
 	font-size: 22px;
 }
 
@@ -52,12 +59,11 @@ strong {
 	font-size: 21px;
 	font-weight: bold;
 	/* color: #7da220; */
-	color: #ff7200;
+	color: black;
 }
 
 .eatnews {
 	font-size: 18px;
-	color: black;
 	background-color: #f0f0f0;
 }
 

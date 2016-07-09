@@ -1,7 +1,6 @@
 <?php
 
 
-
 function addHomeMenuLink($menuItems, $args)
 {
         if('main' == $args->theme_location)
