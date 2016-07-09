@@ -85,7 +85,7 @@
       <div class="col-xs-12" >
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-          <?php if(!in_category(3)) {the_content();} ?>
+          <?php {the_content();} ?>
         <?php endwhile; endif; ?>
       </div>
 
