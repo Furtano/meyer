@@ -24,6 +24,9 @@
   <?php wp_head(); ?>
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
+
+
+
 </head>
 
 
@@ -47,41 +50,13 @@
           </div>
         </div>
 
-        <!-- navbar -->
         <div class="col-xs-12 col-lg-12" >
-        <nav id="site-navigation" class="navbar navbar-default" role="navigation">
-          <div class="container-fullwidth">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <?php wp_nav_menu( array(
-              'theme_location' 	  => 'header-menu',
-              'container' 		    => 'div',
-              'container_class' 	=> 'collapse navbar-collapse',
-              'container_id'    	=> 'main-navbar-collapse',
-              'menu_class'      	=> 'nav navbar-nav',
-              'menu_id'         	=> '',
-              'echo'            	=> true,
-              'fallback_cb'     	=> 'wp_page_menu',
-              'before'          	=> '',
-              'after'           	=> '',
-              'link_before'     	=> '',
-              'link_after'      	=> '',
-              'items_wrap'      	=> '<ul id="%1$s" class="%2$s">%3$s</ul>',
-              'depth'           	=> 0,
-              'walker'          	=> ''
-            )); ?>
-
-          </div>
-        </nav>
+          <?php if ( is_active_sidebar( 'erstes_widget' ) ) : ?>
+          <?php dynamic_sidebar( 'erstes_widget' ); ?>
+          <?php endif; ?>
+        </div>
 
 
-      </div>
 
       <div class="col-xs-12" >
         <?php if(is_home())

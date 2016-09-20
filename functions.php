@@ -32,5 +32,32 @@ function register_my_menus() {
   );
 
 }
+
+
+
+
+
+
+
+function meyer_widgets_init() {
+register_sidebar(array(
+'name'          => 'Erstes Widget',
+'id'            => 'erstes_widget',
+'description'   => 'Mein erstes selbst angelegtes Widget Area',
+'before_widget' => '<div class=”juhu_ein_widget”>',
+'after_widget' => '</div>',
+'before_title' => '<h2>',
+'after_title' => '</h2>',
+) );
+}
+add_action( 'widgets_init', 'meyer_widgets_init' );
+
+
+
+
+
+
+
+
  add_action ('init', 'register_my_menus');
 ?>
