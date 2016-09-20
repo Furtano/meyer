@@ -50,7 +50,8 @@
           </div>
         </div>
 
-        <div class="col-xs-12 col-lg-12" >
+        <!--- HEADER MENU -->
+        <div class="col-xs-12 col-lg-12" style="padding-bottom: 15px" >
           <?php if ( is_active_sidebar( 'erstes_widget' ) ) : ?>
           <?php dynamic_sidebar( 'erstes_widget' ); ?>
           <?php endif; ?>
