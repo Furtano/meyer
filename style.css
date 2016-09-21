@@ -18,6 +18,17 @@ Text Domain: meyer
 	    }
 }
 
+
+
+/* Dropdown bei hover über Untermenü*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+
+
+
 h2 a {
 	color: #a1c317;
 	font-size: 25px;

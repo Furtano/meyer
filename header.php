@@ -27,6 +27,7 @@
 
 
 
+
 </head>
 
 
@@ -51,11 +52,38 @@
         </div>
 
         <!--- HEADER MENU -->
+
         <div class="col-xs-12 col-lg-12" style="padding-bottom: 15px" >
-          <?php if ( is_active_sidebar( 'erstes_widget' ) ) : ?>
-          <?php dynamic_sidebar( 'erstes_widget' ); ?>
-          <?php endif; ?>
+
+
+
+
+
+          <div class="collapse navbar-collapse">
+             <ul class="nav navbar-nav">
+               <li class="active"><a href="../index.php">Willkommen</a></li>
+               <li><a href="konzept">Konzept</a></li>
+               <li><a href="ueber-uns">Über uns</a></li>
+               <li><a href="einzelberatung">Einzelberatung</a></li>
+
+               <li class="dropdown "><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle" role="button">Kurse <b class="caret"></b></a>
+                   <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                       <li role="presentation"><a href="kochkurse" role="menuitem">Kochkurse</a></li>
+                       <li role="presentation"><a href="ernaehrungskurse" role="menuitem">Ernährungskurse</a></li>
+                   </ul>
+               </li>
+               <li><a href="angebote">Angebote</a></li>
+               <li><a href="#onlineberatung">Onlineberatung</a></li>
+               <li><a href="#rezeptdesmonats">Rezept des Monats</a></li>
+               <li><a href="#gallerie">Gallerie</a></li>
+
+               <li><a href="kontakt">Kontakt</a></li>
+             </ul>
+           </div><!--/.nav-collapse -->
+
+
         </div>
+
 
 
 
@@ -95,6 +123,6 @@
 
 </div><!-- .site -->
 
-
+<?php wp_footer(); ?>
 </body>
 </html>
