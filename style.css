@@ -19,7 +19,6 @@ Text Domain: meyer
 }
 
 
-
 /* Dropdown bei hover über Untermenü*/
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -104,7 +103,7 @@ nav li {
 }
 
 .navbar-nav li a {
-	font-size: 23px;
+	font-size: 22px;
 	color: #575757 !important;
 }
 .navbar-nav li a:hover {

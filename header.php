@@ -72,10 +72,10 @@
                        <li role="presentation"><a href="ernaehrungskurse" role="menuitem">Ernährungskurse</a></li>
                    </ul>
                </li>
-               <li><a href="angebote">Angebote</a></li>
-               <li><a href="#onlineberatung">Onlineberatung</a></li>
-               <li><a href="#rezeptdesmonats">Rezept des Monats</a></li>
-               <li><a href="#gallerie">Gallerie</a></li>
+               <li><a href="gutscheine">Gutscheine</a></li>
+               <li><a href="onlineberatung">Onlineberatung</a></li>
+               <li><a href="rezeptdesmonats">Rezept des Monats</a></li>
+               <li><a href="gallerie">Gallerie</a></li>
 
                <li><a href="kontakt">Kontakt</a></li>
              </ul>
