@@ -45,7 +45,7 @@
 
         <div class="col-xs-12" style="padding-left:0px; padding-right:18px;padding-top:0px;">
           <div id="logologo" class="col-xs-12 col-md-2 col-lg-2">
-            <a href="http://meyer.webfuchs-entwicklung.de/"><img  src="<?php echo get_template_directory_uri(); ?>/fitdurchessen2.png" style="height: 17vh;"/></a>
+            <a href="http://meyer.webfuchs-entwicklung.de/"><img  src="<?php echo get_template_directory_uri(); ?>/fitdurchessen3.png" style="height: 17vh;"/></a>
           </div>
           <div class="col-xs-10 hidden-xs hidden-sm " id="bgheader">
           </div>
@@ -64,7 +64,13 @@
                <li class="active"><a href="../index.php">Willkommen</a></li>
                <li><a href="konzept">Konzept</a></li>
                <li><a href="ueber-uns">Über uns</a></li>
-               <li><a href="einzelberatung">Einzelberatung</a></li>
+
+               <li class="dropdown ">
+                 <a href="einzelberatung" id="drop0">Einzelberatung <b class="caret"></b></a>
+                   <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                       <li role="presentation"><a href="impedanz" role="menuitem">BIO-Impedanzanalyse</a></li>
+                   </ul>
+               </li>
 
                <li class="dropdown "><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle" role="button">Kurse <b class="caret"></b></a>
                    <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
@@ -74,7 +80,7 @@
                </li>
                <li><a href="gutscheine">Gutscheine</a></li>
                <li><a href="onlineberatung">Onlineberatung</a></li>
-               <li><a href="rezeptdesmonats">Rezept des Monats</a></li>
+               <li><a href="rezept-des-monats">Rezept des Monats</a></li>
                <li><a href="gallerie">Gallerie</a></li>
 
                <li><a href="kontakt">Kontakt</a></li>
@@ -87,7 +93,7 @@
 
 
 
-      <div class="col-xs-12" >
+      <div class="col-xs-12" id="content" >
         <?php if(is_home())
         {
           query_posts( 'cat=-' .  get_option('ernaehrungsnews_kategorieId')  );
