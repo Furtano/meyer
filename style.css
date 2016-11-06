@@ -58,15 +58,16 @@ h3 {
 
 body {
 	color: black;
-	font-size: 21px;
+	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
 	background-color:#F28E00;
 	background-image: url('bg-muster3.png');
 	background-size: 15%;
+	padding-top: 75px;
 }
 
 strong {
-	font-size: 21px;
+	font-size: 18px;
 	font-weight: bold;
 	/* color: #7da220; */
 	color: black;
@@ -120,7 +121,7 @@ nav li {
 
 
 #bgheader {
-	background-image: url("header4.jpg");
+	background-image: url("header6.jpg");
 	background-repeat: repeat-x;
 	background-size: 100%;
 	height: 19vh;
